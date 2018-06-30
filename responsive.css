@@ -19,14 +19,7 @@
 
 /* top */
  
-.top-section {
-  padding-top: 160px;
-  padding-bottom: 60px;
-  }
-  
- .first-title {
-   margin-bottom: 80px;
-  }
+
 
 .second-title p {
   margin-left: 264px;
@@ -227,10 +220,14 @@
 /* top */
 
 .top-section {
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding-top: 160px;
+  padding-bottom: 60px;
 }
-
+  
+.first-title {
+   margin-bottom: 80px;
+  }
+  
 .first-title h1 {
   font-size: 50px;
 }
