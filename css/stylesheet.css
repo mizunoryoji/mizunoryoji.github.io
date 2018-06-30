@@ -1,0 +1,371 @@
+/*-------  共通のCSS  --------*/
+
+html {
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  box-sizing: border-box;
+  color: #000;
+  font-feature-settings : "palt";
+}
+
+h1, h2, h3, h4, h5, p  {
+ font-size: 100%;
+ font-weight: normal;
+ margin: 0;
+ padding: 0;
+}
+
+p {
+  font-size: 16px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-title {
+  color: #000;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.section-title h3 {
+  font-size: 32px;
+  font-family: "GFS Didot", serif;
+  font-weight: normal;
+}
+
+.section-title p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/*-------  共通のCSS  --------*/
+
+/*-------  header  --------*/
+
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.9);
+  z-index: 10;
+  line-height: 50px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-logo {
+  color: #00ccff;
+  font-size: 16px;
+  font-family: "GFS Didot", serif;
+}
+
+.header-logo span {
+  font-size: 8px;
+  font-family: "GFS Didot", serif;
+}
+
+.header-menu {
+  float: right;
+}
+
+.header-menu li {
+  float: left;
+}
+
+.header-menu a {
+  font-size: 14px;
+  font-family: "GFS Didot", serif;
+  padding: 10px;
+}
+
+.header-menu a:hover {
+  color: #00ccff;
+  transition: color .3s;
+}
+
+/*-------  nav  --------*/
+
+nav.globalMenuSp{
+  display: none;
+}
+
+.navToggle {
+  display: none;
+}
+
+/*-------  nav  --------*/
+
+/*-------  header end  --------*/
+
+/*-------  top  --------*/
+
+.top-section {
+  padding-top: 240px;
+  padding-bottom: 150px;
+  background-color: #333;
+  height: 310px;
+  color: #fff;
+  text-align: center;
+}
+
+.first-title {
+  line-height:0.9;
+  margin-bottom: 100px;
+}
+
+.first-title h1 {
+  font-family: "GFS Didot", serif;
+  color: #00ccff;
+  font-size: 80px;
+}
+
+.first-title span {
+  font-family: "GFS Didot", serif;
+  color: #00ccff;
+  font-size: 40px;
+}
+
+.cursive {
+  font-family: "Calligraffitti", serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.cursive span {
+  font-family: "Calligraffitti", serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.second-title {
+  line-height:1.2;
+}
+
+.second-title h2 {
+  font-size: 60px;
+}
+
+.second-title p {
+  font-size: 16px;
+  margin-left: 27%;
+}
+
+/*-------  top end  --------*/
+
+/*-------  profile  --------*/
+
+.profile-wrap {
+  margin-right: 50px;
+  padding-bottom: 100px;
+}
+
+.p-left {
+  width: 40%;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  clear: left;
+  font-size: 16px;
+  padding: 40px 0 10px;
+}
+
+.p-left span {
+  color:#666;
+  font-size: 8px;
+}
+
+.p-right {
+  width: 60%;
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 0 40%;
+  font-size: 32px;
+  padding: 40px 0 10px;
+}
+
+.about-left {
+  padding-bottom: 28px;
+}
+
+.about-right {
+  font-size: 24px;
+}
+/*-------  profile end  --------*/
+
+/*-------  history  --------*/
+
+.history-section {
+  background-color: #ccc;
+  padding-bottom: 40px;
+}
+
+.history-wrap {
+  padding-top: 30px;
+}
+.history-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-left: 20px;
+  margin-right: 25px;
+  margin-bottom: 70px;
+}
+
+.history-box h4 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.history-box p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.btn {
+  padding: 5px 14px 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .3s;
+  background-color: #333;
+  border: 1px solid #333;
+  float: right;
+  color: #fff;
+}
+
+.btn:hover {
+  color: rgba(0, 204, 255, 1.0);
+}
+
+/*-------  history end  --------*/
+
+/*-------  modal windows  --------*/
+
+.modal-box{
+  width: 100%;
+  height: 92%;
+  background-color: #f6f6f6;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.close-modal span:nth-child(1) {
+  top: 18px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.close-modal span:nth-child(2) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*-------  modal windows end  --------*/
+
+
+
+/*-------  process  --------*/
+
+.process-section {
+  padding-bottom: 60px;
+}
+
+.process-wrap {
+  margin-top: 30px;
+}
+
+.left {
+  width: 40%;
+  float: left;
+  margin-top: 10px;
+}
+
+.left h5 {
+  font-size: 40px;
+}
+
+.left p {
+  color: #666;
+}
+
+.right {
+  width: 50%;
+  float: right;
+  margin-top: 10px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+
+.process-box {
+  overflow: hidden;
+}
+
+.concept-ja {
+  margin-left: 64px;
+}
+
+.points-ja {
+  margin-left: 34px;
+}
+
+.ending-ja {
+  margin-left: 50px;
+}
+/*-------  process end  --------*/
+
+/*-------  footer  --------*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.message p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contact {
+  margin-bottom: 80px;
+}
+
+.contact p {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.copyright {
+  font-size: 12px;
+}
+/*-------  footer end  --------*/
