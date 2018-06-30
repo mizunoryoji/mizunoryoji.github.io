@@ -18,6 +18,15 @@
 /* header end */
 
 /* top */
+ 
+.top-section {
+  padding-top: 160px;
+  padding-bottom: 60px;
+  }
+  
+ .first-title {
+   margin-bottom: 80px;
+  }
 
 .second-title p {
   margin-left: 264px;
