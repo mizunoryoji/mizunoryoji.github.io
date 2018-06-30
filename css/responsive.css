@@ -93,7 +93,9 @@
 @media all and (max-width: 670px) {
 
   /* 共通のcss */
-
+.section-title {
+  padding-bottom: 30px;
+  }
   /* 共通のcss */
 
 /* nav ハンバーガーメニュー  */
