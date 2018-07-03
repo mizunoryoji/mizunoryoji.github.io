@@ -9,7 +9,7 @@ $(function() {
   });
 
 
-  // nav　ハンバーガーメニュー
+  // nav　
   $('.navToggle').click(function() {
     $(this).toggleClass('active');
 
