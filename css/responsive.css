@@ -1,6 +1,14 @@
 /* タブレット向けレイアウト */
 @media all and (max-width: 1000px) {
 
+  /* 共通のcss */
+
+  .section-title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/* 共通のcss end */
 
 /* nav ハンバーガーメニュー  */
 
@@ -19,6 +27,15 @@
 
 /* top */
 
+.top-section {
+    padding-top: 220px;
+    padding-bottom: 140px;
+}
+
+.first-title {
+    margin-bottom: 90px;
+}
+
 .second-title p {
   margin-left: 264px;
 }
@@ -26,6 +43,10 @@
 /* top end */
 
 /* profile */
+
+.profile-wrap {
+  padding-bottom: 70px;
+}
 
 .p-left {
   font-size: 14px;
@@ -47,6 +68,10 @@
 
 /* history */
 
+.history-section {
+  padding-bottom: 30px;
+}
+
 .history-box {
   width: 45%;
   margin-left: 2%;
@@ -54,6 +79,19 @@
 }
 
 /* history end */
+
+/* modal windows */
+.modal-content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  color: #666;
+  font-size: 12px;
+}
+
+/* modal windows end */
 
 /* process */
 
@@ -76,7 +114,9 @@
 /* process end */
 
 /* footer */
-
+footer {
+  padding-top: 60px;
+}
 .message p {
   width: 100%;
 }
@@ -93,10 +133,25 @@
 @media all and (max-width: 670px) {
 
   /* 共通のcss */
-.section-title {
-  padding-bottom: 30px;
-  }
+
+  .section-title {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.section-title h3 {
+    font-size: 28px;
+}
   /* 共通のcss */
+
+  /* header */
+
+  header {
+    height: 40px;
+    line-height: 40px;
+  }
+
+
+  /* header end */
 
 /* nav ハンバーガーメニュー  */
 
@@ -110,7 +165,6 @@
     right: 0px;
     top: 0px;
     width: 42px;
-    height: 50px;
     cursor: pointer;
     z-index: 13;
     text-align: center;
@@ -186,7 +240,7 @@
   }
 
   nav.globalMenuSp ul li {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0;
     width: 100%;
     border-bottom: 1px solid #fff;
@@ -202,7 +256,8 @@
     display: block;
     font-family: "GFS Didot", serif;
     color: #fff;
-    padding: 2% 0;
+    padding: 1.5% 0;
+    line-height: 30px;
   }
 
   nav.globalMenuSp ul li a:hover {
@@ -221,13 +276,12 @@
 
 .top-section {
   padding-top: 170px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .first-title {
-  margin-bottom: 80px;
- }
-  
+  margin-bottom: 70px;
+}
 .first-title h1 {
   font-size: 50px;
 }
@@ -258,13 +312,14 @@
 
 .profile-wrap {
   text-align: center;
+  padding-bottom: 60px;
 }
 
 .p-left {
   width: 100%;
   font-size: 14px;
   float: none;
-  padding: 50px 0 10px;
+  padding: 40px 0 15px;
   border-bottom: none;
 }
 
@@ -284,28 +339,83 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 60px;
+  line-height: 1.5;
 }
 
 .history-box h4 {
   text-align: center;
+  font-size: 30px;
+  margin-bottom: 12px;
 }
 
 .btn {
   float: none;
-  width: 92%;
+  width: 100%;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 11px;
-  margin-top: 10px;
+  padding: 6px 0 7px;
+  margin-top: 7px;
 }
 /* history end */
 
+/* modal windows */
+
+.modal-content {
+    width:70%;
+    margin:0;
+    padding:3% 5%;
+    border:2px solid #aaa;
+    background:#fff;
+}
+
+.modal-content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  color: #666;
+  font-size: 11px;
+}
+
+.modal-close span{
+  left: 94%;
+}
+/* modal windows end */
+
+
 /* process */
 
+.process-section {
+  padding-bottom: 40px;
+}
+
+.right {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.right p {
+  line-height: 1.5;
+}
+
+.left h5 {
+  font-size: 32px;
+}
 /* process end */
 
 /* footer */
 
+footer {
+  padding-top: 50px;
+}
+
+.message p {
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.contact {
+  margin-bottom: 70px;
+}
 /* footer end */
 
 
