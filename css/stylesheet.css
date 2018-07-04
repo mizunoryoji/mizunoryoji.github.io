@@ -255,6 +255,21 @@ nav.globalMenuSp{
   line-height: 1.7;
 }
 
+.btn {
+  padding: 5px 14px 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .3s;
+  background-color: #333;
+  border: 1px solid #333;
+  float: right;
+  color: #fff;
+  display: inline-block;
+}
+.btn:hover {
+    cursor:pointer;
+    color: rgba(0, 204, 255, 1.0);
+}
 
 /*-------  history end  --------*/
 
@@ -284,21 +299,6 @@ nav.globalMenuSp{
     width:100%;
     height:120%;
     background-color:rgba(0,0,0,0.75);
-}
-.modal-open {
-  padding: 5px 14px 6px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all .3s;
-  background-color: #333;
-  border: 1px solid #333;
-  float: right;
-  color: #fff;
-  display: inline-block;
-}
-.modal-open:hover {
-    cursor:pointer;
-    color: rgba(0, 204, 255, 1.0);
 }
 
 .modal-close span{
