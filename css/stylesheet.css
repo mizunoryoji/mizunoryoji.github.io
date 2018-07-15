@@ -1,30 +1,23 @@
-/*-------  共通のCSS  --------*/
-
-html {
-  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
-  box-sizing: border-box;
-  color: #000;
-  font-feature-settings : "palt";
-}
-
-h1, h2, h3, h4, h5, p  {
- font-size: 100%;
- font-weight: normal;
- margin: 0;
- padding: 0;
-}
-
-p {
-  font-size: 16px;
-}
-ul {
+/*-------  reset css  --------*/
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'palt' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 li {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -33,42 +26,37 @@ a {
   color: #fff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+}
+
+p {
+  font-size: 16px;
+}
+/*-------  reset css end --------*/
+
+/*-------  共通のCSS  --------*/
+
 .container {
   max-width: 1000px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 2%;
+  margin: 0 auto;
 }
 
 .section-title {
-  color: #000;
   padding-top: 70px;
   padding-bottom: 40px;
   text-align: center;
 }
 
 .section-title h3 {
-  font-size: 32px;
+  font-size: 52px;
   font-family: "GFS Didot", serif;
-  font-weight: normal;
 }
 
 .section-title p {
   color: #666;
-  font-size: 14px;
-  margin-top: 8px;
-}
-
-.fade-up {
-  transition: opacity 0.7s;
-  -moz-transition: opacity 0.7s;
-  -webkit-transition: opacity 0.7s;
-  -o-transition: opacity 0.7s;
-  transition: transform 0.7s;
-  -moz-transition: transform 0.7s;
-  -webkit-transition: transform 0.7s;
-  -o-transition: transform 0.7s;
+  margin-top: 10px;
 }
 
 /*-------  共通のCSS  --------*/
@@ -84,6 +72,8 @@ header {
   background-color: rgba(51, 51, 51, 0.9);
   z-index: 10;
   line-height: 50px;
+  overflow: hidden;
+  font-family: "GFS Didot", serif;
 }
 
 .header-left {
@@ -92,13 +82,11 @@ header {
 
 .header-logo {
   color: #00ccff;
-  font-size: 16px;
-  font-family: "GFS Didot", serif;
+  font-size: 24px;
 }
 
 .header-logo span {
-  font-size: 8px;
-  font-family: "GFS Didot", serif;
+  font-size: 16px;
 }
 
 .header-menu {
@@ -110,8 +98,7 @@ header {
 }
 
 .header-menu a {
-  font-size: 14px;
-  font-family: "GFS Didot", serif;
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -122,11 +109,11 @@ header {
 
 /*-------  nav  --------*/
 
-nav.globalMenuSp{
+.navToggle {
   display: none;
 }
 
-.navToggle {
+nav.globalMenuSp{
   display: none;
 }
 
@@ -137,16 +124,11 @@ nav.globalMenuSp{
 /*-------  top  --------*/
 
 .top-section {
-  padding-top: 240px;
-  padding-bottom: 150px;
+  padding-top: 230px;
+  padding-bottom: 170px;
   background-color: #333;
   color: #fff;
   text-align: center;
-}
-
-.first-title {
-  line-height:0.9;
-  margin-bottom: 100px;
 }
 
 .first-title h1 {
@@ -155,17 +137,16 @@ nav.globalMenuSp{
   font-size: 80px;
 }
 
-
 .first-title span {
   font-family: "GFS Didot", serif;
   color: #00ccff;
-  font-size: 40px;
+  font-size: 48px;
 }
 
 .cursive {
   font-family: "Calligraffitti", serif;
   font-size: 32px;
-  margin: 0;
+  margin-top: 5px;
 }
 
 .cursive span {
@@ -175,7 +156,8 @@ nav.globalMenuSp{
 }
 
 .second-title {
-  line-height:1.2;
+  margin-top: 90px;
+  display: inline-block;
 }
 
 .second-title h2 {
@@ -184,70 +166,79 @@ nav.globalMenuSp{
 
 .second-title p {
   font-size: 16px;
-  margin-left: 27%;
+  margin-top: 12px;
+  text-align: right;
 }
 
 /*-------  top end  --------*/
 
 /*-------  profile  --------*/
 
-.profile-wrap {
-  padding-bottom: 100px;
+.profile-section {
+  padding-bottom: 70px;
+}
+
+.profile-box {
+  overflow: hidden;
 }
 
 .p-left {
   width: 40%;
   border-bottom: 1px solid #ccc;
   float: left;
-  clear: left;
-  font-size: 16px;
-  padding: 40px 0 10px;
+  padding: 20px 0 10px;
 }
 
-.p-left span {
+.p-left-ja {
   color:#666;
-  font-size: 8px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .p-right {
+  float: right;
   width: 60%;
   border-bottom: 1px solid #ccc;
-  margin: 0 0 0 40%;
-  font-size: 32px;
-  padding: 40px 0 10px;
+  padding: 20px 0 10px;
 }
 
-.about-left {
-  padding-bottom: 28px;
+.p-right p {
+  font-size: 24px;
+}
+
+.name-right, .interests-right,
+.skills-right, .tools-right,
+.contact-right {
+  padding-top: 36px;
 }
 
 .about-right {
-  font-size: 24px;
+  line-height: 1.2;
 }
+
+.about-left {
+  padding-bottom: 26px;
+}
+
 /*-------  profile end  --------*/
 
 /*-------  history  --------*/
 
 .history-section {
   background-color: #ccc;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
-.history-wrap {
-  padding-top: 30px;
-}
 .history-box {
   display: inline-block;
   vertical-align: top;
-  width: 45%;
-  margin-left: 20px;
-  margin-right: 25px;
-  margin-bottom: 70px;
+  width: 44%;
+  margin: 0 20px;
 }
 
 .history-box h4 {
   font-size: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .history-box p {
@@ -256,15 +247,14 @@ nav.globalMenuSp{
 }
 
 .btn {
-  padding: 5px 14px 5px;
-  font-size: 14px;
+  padding: 5px 14px;
+  font-size: 16px;
   cursor: pointer;
   transition: all .3s;
   background-color: #333;
   border: 1px solid #333;
   float: right;
-  color: #fff;
-  display: inline-block;
+  margin: 10px;
 }
 .btn:hover {
     cursor:pointer;
@@ -274,6 +264,7 @@ nav.globalMenuSp{
 /*-------  history end  --------*/
 
 /*-------  modal windows  --------*/
+
 .modal-content {
     position:fixed;
     display:none;
@@ -282,16 +273,13 @@ nav.globalMenuSp{
     max-height: 70%;
     margin:0;
     padding:3% 5%;
-    border:2px solid #aaa;
+    border:2px solid #ccc;
     background:#fff;
     overflow:auto;
 }
-.modal-content p {
-    margin:0;
-    padding:0;
-}
+
 .modal-overlay {
-    z-index:1;
+    z-index:10;
     display:none;
     position:fixed;
     top:0;
@@ -340,22 +328,24 @@ nav.globalMenuSp{
 
 /*-------  modal windows end  --------*/
 
-
-
 /*-------  process  --------*/
 
 .process-section {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .process-wrap {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.process-box {
+  overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .left {
-  width: 40%;
   float: left;
-  margin-top: 10px;
+  width: 40%;
 }
 
 .left h5 {
@@ -364,34 +354,25 @@ nav.globalMenuSp{
 
 .left p {
   color: #666;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 .right {
-  width: 50%;
+  width: 60%;
   float: right;
-  margin-top: 10px;
-  margin-right: 100px;
-  margin-bottom: 30px;
   line-height: 1.7;
 }
 
-
-.process-box {
-  overflow: hidden;
+.right span {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
-.concept-ja {
-  margin-left: 64px;
+.process-right-txt {
+  margin-bottom: 20px;
 }
-
-.points-ja {
-  margin-left: 34px;
-}
-
-.ending-ja {
-  margin-left: 50px;
-}
-
 
 /*-------  process end  --------*/
 
@@ -399,26 +380,23 @@ nav.globalMenuSp{
 
 footer {
   background-color: #333;
+  padding: 70px 0;
   color: #fff;
-  padding-top: 80px;
   text-align: center;
 }
 
-.message p {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
 .contact {
-  margin-bottom: 80px;
+  margin: 40px 0;
 }
 
 .contact p {
   font-size: 18px;
   padding-top: 10px;
+  font-weight: bold;
 }
 
 .copyright {
-  font-size: 12px;
+  font-size: 14px;
 }
 /*-------  footer end  --------*/
+
