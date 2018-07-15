@@ -11,18 +11,18 @@
       <meta name="robots" content="noindex,nofollow">
       <meta name="format-detection" content="email=no">
 
-      <meta property="og:url" content="ページのURL">
+      <meta property="og:url" content="http://mizunor.site/">
       <meta property="og:title" content="Mizuno Ryoji | Portfolio site">
       <meta property="og:type" content="website">
-      <meta property="og:image" content="画像のURL">
+      <meta property="og:image" content="http://mizunor.site/image/img01.jpg">
       <meta property="og:site_name" content="D&L">
 
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/stylesheet.css">
       <link rel="stylesheet" href="css/responsive.css">
 
-
-      <!-- google fonts -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Calligraffitti|GFS+Didot" rel="stylesheet">
 
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -35,25 +35,6 @@
           <div class="header-left">
             <a class="header-logo" href="#top">D<span>&</span>L</a>
           </div>
-
-          <!-- nav -->
-
-          <div class="navToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span>menu</span>
-          </div>
-
-          <nav class="globalMenuSp">
-            <ul>
-              <li><a href="#profile">PROFILE</a></li>
-              <li><a href="#history">HISTORY</a></li>
-              <li><a href="#process">PROCESS</a></li>
-            </ul>
-          </nav>
-
-          <!-- nav -->
 
           <div class="header-menu">
             <ul>
@@ -69,6 +50,24 @@
             </ul>
           </div>
         </div>
+
+          <!-- nav -->
+          <div class="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>menu</span>
+          </div>
+
+          <nav class="globalMenuSp">
+            <ul>
+              <li><a href="#profile">PROFILE</a></li>
+              <li><a href="#history">HISTORY</a></li>
+              <li><a href="#process">PROCESS</a></li>
+            </ul>
+          </nav>
+          <!-- nav -->
+
       </header>
       <!-- header end -->
 
@@ -79,7 +78,7 @@
             <h1>D<span>&</span>L</h1>
             <p class="cursive">design<span>&</span>logic</p>
           </div>
-          <div class="second-title">
+          <div data-aos="fade-down" data-aos-offset="0" data-aos-duration="0" class="second-title">
             <h2>Mizuno Ryoji</h2>
             <p>Portfolio site</p>
           </div>
@@ -88,27 +87,67 @@
       <!-- top end -->
 
       <!-- profile -->
-      <div id="profile">
+      <div id="profile" class="profile-section">
         <div class="container">
           <div class="section-title">
             <h3>PROFILE</h3>
             <p>プロフィール</p>
           </div>
           <div class="profile-wrap">
-            <dl>
-              <dt class="p-left">NAME<br><span>名前</span></dt>
-              <dd class="p-right">水野　量慈</dd>
-              <dt class="p-left about-left">ABOUT<br><span>私について</span></dt>
-              <dd class="p-right about-right">1994年生まれ / 福岡県在住<br>北九州市立大学外国語学部国際関係学科</dd>
-              <dt class="p-left">INTERESTS<br><span>趣味</span></dt>
-              <dd class="p-right">サッカー / 筋トレ / 英語 / 洋楽</dd>
-              <dt class="p-left">SKILLS<br><span>スキル</span></dt>
-              <dd class="p-right">HTML / CSS / Photoshop</dd>
-              <dt class="p-left">TOOLS<br><span>ツール</span></dt>
-              <dd class="p-right">MacBook Pro / Atom</dd>
-              <dt class="p-left">CONTACT<br><span>お問い合わせ</span></dt>
-              <dd class="p-right">info@mizunor.site</dd>
-            </dl>
+            <div data-aos="fade-up" class="profile-box">
+              <div class="p-left">
+                <p>NAME</p>
+                <p class="p-left-ja">名前</p>
+              </div>
+              <div class="p-right name-right">
+                <p>水野　量慈</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="profile-box">
+              <div class="p-left about-left">
+                <p>ABOUT</p>
+                <p class="p-left-ja">私について</p>
+              </div>
+              <div class="p-right about-right">
+                <p>1994年生まれ / 福岡県在住<br>北九州市立大学外国語学部国際関係学科 4年</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="profile-box">
+              <div class="p-left">
+                <p>INTERESTS</p>
+                <p class="p-left-ja">趣味</p>
+              </div>
+              <div class="p-right interests-right">
+                <p>サッカー / 筋トレ / 英語 / 洋楽</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="profile-box">
+              <div class="p-left">
+                <p>SKILLS</p>
+                <p class="p-left-ja">スキル</p>
+              </div>
+              <div class="p-right skills-right">
+                <p>HTML / CSS / Photoshop</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="profile-box">
+              <div class="p-left">
+                <p>TOOLS</p>
+                <p class="p-left-ja">ツール</p>
+              </div>
+              <div class="p-right tools-right">
+                <p>MacBook Pro / Atom</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="profile-box">
+              <div class="p-left">
+                <p>CONTACT</p>
+                <p class="p-left-ja">お問い合わせ</p>
+              </div>
+              <div class="p-right contact-right">
+                <p>info@mizunor.site</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -122,7 +161,7 @@
             <p>略歴</p>
           </div>
           <div class="history-wrap">
-            <div class="history-box">
+            <div data-aos="fade-right" class="history-box">
               <h4>SCHOOL DAYS</h4>
               <p>小・中・高校生の学生生活について紹介させていただきたいと思います。
                 <br>小学生の頃の好きな科目は、体育で、スポーツ好きな男子小学生でした。
@@ -130,14 +169,14 @@
                 陸上部に所属していましたので、練習日の放課後や週末は学校のグランドをよく走っていました。</p>
                 <a data-target="con1" class="btn modal-open">MORE</a>
             </div>
-            <div class="history-box">
+            <div data-aos="fade-right" class="history-box">
               <h4>COLLEGE DAYS</h4>
               <p>大学生活について勉強とアルバイトを紹介させていただきたいと思います。
                 <br>私は大学4年生（2018年6月 現在）で、北九州市立大学外国語学部国際関係学科に所属しています。
                 私の学科では、外国語と国際関係について主に学びます。私は、主に英語と国際金融について関心を持って勉強しています。</p>
                 <a data-target="con2" class="btn modal-open">MORE</a>
             </div>
-            <div class="history-box">
+            <div data-aos="fade-right" class="history-box">
               <h4>UK LIFE</h4>
               <p>イギリスの大学留学生活について紹介させていただきたいと思います。
                 <br>大学2年生の後期から大学3年生の前期（2016年9月～2017年6月）まで、
@@ -145,7 +184,7 @@
                 英語力の向上を目的に勉強と遊びを楽しみながら、留学をしていました。</p>
               <a data-target="con3" class="btn modal-open">MORE</a>
             </div>
-            <div class="history-box">
+            <div data-aos="fade-right" class="history-box">
               <h4>WEB DESIGN</h4>
               <p>ウェブデザインの勉強について紹介させていただきたいと思います。<br>2018年の2月頃からhtml, css, js, phpを勉強し始め、最初は趣味でウェブサイトの作り方を独学で勉強していました。
                 勉強し始めたときは、わからないことが多くて大変でしたが、毎日少しづつ勉強を続けていました。
@@ -198,7 +237,6 @@
           資料を集めたり、文献を読んで情報を整理することなど、大変な作業が多いですが、頑張っています。<br>
           次に、アルバイトについてお話しさせていただきたいと思います。以前に、ホテルのレストラン、携帯ショップ（派遣）、セブンイレブンで働いていました。接客業なので、色々な方とコミュニケーションを取ることが多く、
           基本的なマナーや言葉遣いを学ぶことができました。
-
         </p>
       </div>
       <div id="con3" class="modal-content">
@@ -208,7 +246,7 @@
           </a>
         </div>
         <h4>UK LIFE</h4>
-        <p>イギリスの大学留学生活について紹介させていただきたいと思います。<br> 大学2年生の後期から大学3年生の前期（2016年9月～2017年6月）まで、
+        <p>イギリスの大学留学生活について紹介させていただきたいと思います。<br>  大学2年生の後期から大学3年生の前期（2016年9月～2017年6月）まで、
           イギリスのオックスフォードにあるオックスフォード・ブルックス大学に交換留学をしていました。 英語力の向上を目的に勉強と遊びを楽しみながら、
           留学をしていました。<br>
           留学を通して、たくさんの色々な経験をしましたが、今回は私の留学についてざっくりと説明させていただきたいと思います。<br>
@@ -216,15 +254,16 @@
           大学では、語学力向上のための授業、イギリス・ヨーロッパの文化を学ぶための授業を主に履修していました。
           住む場所は、大学の寮で生活していました。ルームメートは５人いて、全員国籍が異なっていたので、かなりインターナショナルでした。
           日本ではアルコールはあまり飲みませんが、友達とよくパブに行ってお酒を飲んだり、イベントに参加したりしていました。<br>
-          次に、旅行についてお話しさせていただきたいと思います。留学をするまでほとんど海外旅行の経験がありませんでしたが、イギリスはヨーロッパの国々に近く、交通費も抑えることができるので、積極的に行っていました。特に印象的だったスペインとフランスの旅行について紹介したいと思います。
+          次に、旅行についてお話しさせていただきたいと思います。留学をするまでほとんど海外旅行の経験がありませんでしたが、イギリスはヨーロッパの国々に近く、交通費を抑えることができるので、積極的に行っていました。特に印象的だったスペインとフランスの旅行について紹介したいと思います。
           スペインでは、地中海沿岸のバルセロナに行ったので、パエリアなどのシーフードを使った料理がとても美味しかったです。
-          イギリスに留学してから、レストランなどで外食をすることに少しネガティブになっていましたので、なおさら美味しく感じました。（理由はお察しください。ヒントは、イギリスです。）
+          イギリスに留学してから、レストランなどで外食をすることに少しネガティヴになっていましたので、なおさら美味しく感じました。（理由はお察しください。ヒントは、イギリスです。）
           また、サクラダファミリアをはじめとして特徴的なデザインの立派な建築物が街の至る所にあり、感嘆させられました。
           フランスでは、ルーブル美術館やエッフェル塔などの観光名所を訪れるためにパリに行きました。パリは漠然とオシャレな街だというイメージを持っていましたが、パリの郊外は建物が壊れていたり、落書きがあったりとかなり荒れている街並みだったことに驚きました。もちろん、パリの中心街には立派な建物が多いです。
           ルーブル美術館ではモナリザなどの絵画や美術作品を観てきました。とても広く、歩き疲れました。調べてみると、敷地面積は、ディズニーランドよりも少し小さいくらいの大きさらしいです。<br>
           ここでは、留学を通しての一部の経験を紹介させていただきました。留学ができてとても良かったと思います。
         </p>
       </div>
+
       <div id="con4" class="modal-content">
         <div>
           <a class="modal-close">
@@ -243,11 +282,13 @@
            その他のウェブサイトを勉強する際に、レイアウト、配色、フォント、コンテンツ、そのサイトのコンセプト・雰囲気を分析しながら、見ていました。
            勉強をしていく中で、私は、シンプルでクールな印象を与えるポートフォリオサイトを制作したいと思いました。
            サイトのデザインは、サイトのコンセプトとマッチしたデザインにすることと、企業の皆様に私のことを知っていただくためのウェブサイトであることを意識して制作しました。
-           白黒をベースに配色は少なめにして、サイトのタイトル”D&L”をクールな印象にするよう心がけました。また、レイアウトや余白で情報を整理してすぐにわかるように努めました。<br>
-           ポートフォリオサイトを制作する過程で、ウェブサイト構築の一通りの流れを学ぶことができました。また、出来ることが増えましたが、スキル・経験不足でうまくいかないところが多いと感じました。<br>
+           白黒をベースに配色は少なめにして、サイトのタイトル”D&L”をクールな印象にするよう心がけました。また、レイアウトや余白で情報を整理してすぐにわかるよう努めました。<br>
+           ポートフォリオサイトを制作する過程で、ウェブサイト構築の一通りの流れを学ぶことができました。また、出来ることが増えましたが、スキル・経験不足でうまくいかないところ
+           が多いと感じました。<br>
            今の目標は、当初の目標と変わらず、ウェブ制作会社に就職してコーポレートサイトを制作することです。
         </p>
       </div>
+    </div>
 
       <!-- modal windows end -->
 
@@ -259,13 +300,13 @@
             <p>プロセス</p>
           </div>
           <div class="process-wrap">
-            <div class="process-box">
+            <div data-aos="fade-up" class="process-box">
               <div class="left">
-                <h5 class="fade-up">CONCEPT</h5>
-                <p class="concept-ja fade-up">コンセプト</p>
+                <h5>CONCEPT</h5>
+                <p>コンセプト</p>
               </div>
               <div class="right">
-                <p class="fade-up">このサイトは、就職活動のポートフォリオサイトとして制作しました。
+                <p>このサイトは、就職活動のポートフォリオサイトとして制作しました。
                   <br>”design & logic”の頭文字を使用したタイトルの”D＆L”は、”デザインは思考の表現である”という言葉から名称しました。
                   <br>ウェブデザインの勉強をし始めたとき、あるウェブサイトの記事に”デザインは思考の表現である” と書いてありました。
                   "デザインには、そのデザインにした理由（思考）があり、そのようなものをデザインと呼びます"、
@@ -276,35 +317,35 @@
                   タイトルに決めました。</p>
               </div>
             </div>
-            <div class="process-box">
+            <div data-aos="fade-up" class="process-box">
               <div class="left">
-                <h5 class="fade-up">POINTS</h5>
-                <p class="points-ja fade-up">工夫した点</p>
+                <h5>POINTS</h5>
+                <p>工夫した点</p>
               </div>
               <div class="right">
-                <p class="fade-up">・サイトのデザインについて<br>サイトはシンプルでクールなテイストのものを制作できるよう心がけました。
+                <p class="process-right-txt"><i class="fas fa-check"></i> <span>サイトのデザインについて</span><br>サイトはシンプルでクールなテイストのものを制作できるよう心がけました。
                   サイトのタイトル”logic”から、クールな雰囲気のデザインがマッチすると思いました。
                   また、企業の皆様にわかりやすく私のポートフォリオサイトを見ていただきたいと思い、シンプルなサイトを制作できるよう努めました。
                   <br>具体的には、配色にサイトのタイトル”logic”から連想される青色を使用しましたが、モノクロをベースに使用する色を抑えて、
-                  クールでシンプルな印象にしました。レイアウトは、ワンカラムで情報が見やすいよう心がけました。
-                  <br>・ライトボックスについて<br>
+                  クールでシンプルな印象にしました。レイアウトは、ワンカラムで情報が見やすいよう心がけました。</p>
+                <p><i class="fas fa-check"></i> <span>ライトボックスについて</span><br>
                   HISTORYセクションで、詳細情報を表示するためにjQueryでライトボックスを制作しました。その際に、
                   『プラグインを使わないスキルを身につけたい人のためのjQueryテクニカルノート』
                   （矢次悟郎、SBクリエイティブ株式会社、2016）を参考にさせていただきました。</p>
               </div>
             </div>
-            <div class="process-box">
+            <div data-aos="fade-up" class="process-box">
               <div class="left">
-                <h5 class="fade-up">ENDING</h5>
-                <p class="ending-ja fade-up">最後に</p>
+                <h5>ENDING</h5>
+                <p>最後に</p>
               </div>
               <div class="right">
-                <p class="fade-up">・反省点<br>反省点は、ワイヤーフレームのデザインとphotoshopでデザインしたカンプが異なってしまったことです。
+                <p class="process-right-txt"><i class="fas fa-check"></i> <span>反省点</span><br>反省点は、ワイヤーフレームのデザインとphotoshopでデザインしたカンプが異なってしまったことです。
                    ワイヤーフレームのデザインに、私の現在のスキルではデザインできないものが含んでいたこと、
                    サイト全体のバランスを考えていなかったことが原因でした。このような問題があったため、
                    photoshopでデザインしたカンプの制作に時間がかかってしまいました。次回は、ワイヤーフレームの設計工程で、
-                   実現可能で全体のバランスを考えたサイトの設計をできるようにしたいと思っています。
-                   <br>・最後に<br>
+                   実現可能で全体のバランスを考えたサイトの設計をできるようにしたいと思っています。</p>
+                <p><i class="fas fa-check"></i> <span>最後に</span><br>
                    最後に、サイト制作にあたり、お世話になりましたウェブデザイナーの後藤さんに感謝を述べたいと思います。
                    サイト制作の最後まで、後藤さんから無償のアドバイス・サポートをいただきました。本当にありがとうございました。
                    今後ともよろしくお願い致します。</p>
@@ -319,17 +360,26 @@
       <footer>
         <div class="container">
           <div class="message">
-            <p>サイトを最後まで見ていただきありがとうございます。ウェブデザイン初学者ですが、どうぞよろしくお願い致します。</p>
+            <p data-aos="fade-right">サイトを最後まで見ていただきありがとうございます。ウェブデザイン初学者ですが、よろしくお願い致します。</p>
           </div>
           <div class="contact">
-            CONTACT
+            <i class="far fa-envelope"></i> CONTACT
             <p>info@mizunor.site</p>
           </div>
-          <div class="copyright">©️2018 Mizuno Ryoji</div>
+          <div class="copyright">copyright 2018 Mizuno Ryoji</div>
         </div>
       </footer>
       <!-- footer end -->
 
       <script type="text/javascript" src="js/script.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+      AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+      });
+      </script>
  </body>
 </html>
+
