@@ -1,145 +1,21 @@
-/* タブレット向けレイアウト */
-@media all and (max-width: 1000px) {
+@media all and (max-width: 831px) {
+  .about-left {
+    padding-bottom: 54px
+  }
+}
+
+/* スマホ向けレイアウト 参考　https://www.imd-net.com/blog/2015/02/24-002823/ */
+@media all and (max-width: 768px) {
 
   /* 共通のcss */
 
   .section-title {
     padding-top: 60px;
     padding-bottom: 30px;
-}
-
-/* 共通のcss end */
-
-/* nav ハンバーガーメニュー  */
-
-  nav.globalMenuSp {
-    display: none;
   }
 
-  .navToggle {
-    display: none;
-  }
-/* nav ハンバーガーメニュー end */
-
-/* header */
-
-/* header end */
-
-/* top */
-
-.top-section {
-    padding-top: 220px;
-    padding-bottom: 140px;
-}
-
-.first-title {
-    margin-bottom: 90px;
-}
-
-.second-title p {
-  margin-left: 264px;
-}
-
-/* top end */
-
-/* profile */
-
-.profile-wrap {
-  padding-bottom: 70px;
-}
-
-.p-left {
-  font-size: 14px;
-  padding-top: 37px;
-}
-
-.p-right {
-  font-size: 26px;
-}
-
-.about-right {
-  font-size: 20px;
-}
-
-.about-left {
-  padding-bottom: 27px;
-}
-/* profile end */
-
-/* history */
-
-.history-section {
-  padding-bottom: 30px;
-}
-
-.history-box {
-  width: 45%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-/* history end */
-
-/* modal windows */
-.modal-content h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.modal-content p {
-  color: #666;
-  font-size: 12px;
-}
-
-/* modal windows end */
-
-/* process */
-
-.left, .right {
-  float: none;
-}
-
-.right {
-  width: 100%;
-}
-
-.left {
-  width: 100%;
-  text-align: center;
-}
-
-.left p {
-  margin-left: 0;
-}
-/* process end */
-
-/* footer */
-footer {
-  padding-top: 60px;
-}
-.message p {
-  width: 100%;
-}
-
-/* footer end */
-
-
-
-
-
-}
-
-/* モバイル向けレイアウト */
-@media all and (max-width: 670px) {
-
-  /* 共通のcss */
-
-  .section-title {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
 .section-title h3 {
-    font-size: 28px;
+    font-size: 40px;
 }
   /* 共通のcss */
 
@@ -149,7 +25,6 @@ footer {
     height: 40px;
     line-height: 40px;
   }
-
 
   /* header end */
 
@@ -161,7 +36,7 @@ footer {
 
   .navToggle {
     display: block;
-    position: fixed;    /* bodyに対しての絶対位置指定 */
+    position: fixed;
     right: 0px;
     top: 0px;
     width: 42px;
@@ -172,7 +47,7 @@ footer {
 
   .navToggle span {
     display: block;
-    position: absolute;    /* .navToggleに対して */
+    position: absolute;
     width: 30px;
     border-bottom: 2px solid #fff;
     -webkit-transition: .35s ease-in-out;
@@ -195,7 +70,6 @@ footer {
 
   .navToggle span:nth-child(4) {
     border: none;
-    font-family: "GFS Didot", serif;
     color: #fff;
     font-size: 8px;
     top: 14px;
@@ -254,7 +128,6 @@ footer {
 
   nav.globalMenuSp ul li a {
     display: block;
-    font-family: "GFS Didot", serif;
     color: #fff;
     padding: 1.5% 0;
     line-height: 30px;
@@ -265,7 +138,6 @@ footer {
     transition: color .3s;
   }
 
-  /* このクラスを、jQueryで付与・削除する */
   nav.globalMenuSp.active {
     transform: translateY(0%);
   }
@@ -275,59 +147,62 @@ footer {
 /* top */
 
 .top-section {
-  padding-top: 170px;
-  padding-bottom: 80px;
+  padding-top: 180px;
+  padding-bottom: 130px;
 }
 
-.first-title {
-  margin-bottom: 70px;
-}
 .first-title h1 {
   font-size: 50px;
 }
 
 .first-title span {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .cursive {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .cursive span {
-  font-size: 9px;
+  font-size: 12px;
+}
+
+.second-title {
+  margin-top: 70px;
 }
 
 .second-title h2 {
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .second-title p {
-  font-size: 10px;
-  margin-left: 159px;
+  font-size: 12px;
+  margin-top: 8px;
 }
 /* top end */
 
 /* profile */
 
-.profile-wrap {
+.profile-section {
+  padding-bottom: 40px;
+}
+
+.profile-box {
   text-align: center;
-  padding-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .p-left {
   width: 100%;
-  font-size: 14px;
   float: none;
-  padding: 40px 0 15px;
+  padding: 10px 0 20px;
   border-bottom: none;
 }
 
 .p-right {
   width: 100%;
-  margin-left: 0;
-  font-size: 24px;
-  padding: 10px 0 10px;
+  float: none;
+  padding: 0 0 10px;
 }
 
 
@@ -335,26 +210,31 @@ footer {
 
 /* history */
 
+.history-section {
+  padding-bottom: 20px;
+}
+
 .history-box {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 60px;
-  line-height: 1.5;
+  margin: 10px 0 30px; /* 相殺　一番上だけ　10px */
+  display: block;
 }
 
 .history-box h4 {
   text-align: center;
-  font-size: 30px;
-  margin-bottom: 12px;
+}
+
+.history-box p {
+  margin-bottom: 10px;
 }
 
 .btn {
-  float: none;
-  width: 100%;
+  width: 20%;
   text-align: center;
-  padding: 6px 0 6px;
-  margin-top: 7px;
+  padding: 1.5% 0;
+  margin: 0 auto;
+  display: block;
+  float: none;
 }
 /* history end */
 
@@ -369,13 +249,13 @@ footer {
 }
 
 .modal-content h4 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .modal-content p {
   color: #666;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .modal-close span{
@@ -386,16 +266,24 @@ footer {
 
 /* process */
 
-.process-section {
-  padding-bottom: 40px;
+.process-wrap {
+    margin-top: 10px;
+}
+
+.process-box {
+  margin-bottom: 30px;
+}
+
+.left {
+  width: 100%;
+  float: none;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .right {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.right p {
-  line-height: 1.5;
+  width: 100%;
+  float: none;
 }
 
 .left h5 {
@@ -406,18 +294,16 @@ footer {
 /* footer */
 
 footer {
-  padding-top: 50px;
+  padding: 60px 0;
 }
 
 .message p {
-  margin-bottom: 40px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
+
 .contact {
-  margin-bottom: 70px;
+  margin: 40px 0;
 }
 /* footer end */
-
-
 
 }
