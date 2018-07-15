@@ -78,7 +78,7 @@
             <h1>D<span>&</span>L</h1>
             <p class="cursive">design<span>&</span>logic</p>
           </div>
-          <div class="second-title">
+          <div data-aos="fade-down" data-aos-offset="0" data-aos-duration="0" class="second-title">
             <h2>Mizuno Ryoji</h2>
             <p>Portfolio site</p>
           </div>
@@ -373,8 +373,12 @@
 
       <script type="text/javascript" src="js/script.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
+　　　　　　　　　　　　<script>
+      AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+      });
       </script>
  </body>
 </html>
