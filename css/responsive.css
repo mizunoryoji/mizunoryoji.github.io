@@ -41,7 +41,7 @@
     top: 0px;
     width: 42px;
     cursor: pointer;
-    z-index: 13;
+    z-index: 100;
     text-align: center;
   }
 
@@ -95,7 +95,7 @@
 
   nav.globalMenuSp {
     position: fixed;
-    z-index: 12;
+    z-index: 90;
     top: 0;
     left: 0;
     background-color: rgba(102, 102, 102, 0.8);
