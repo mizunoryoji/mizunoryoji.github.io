@@ -106,18 +106,6 @@ header {
   color: #00ccff;
   transition: color .3s;
 }
-
-/*-------  nav  --------*/
-
-.navToggle {
-  display: none;
-}
-
-nav.globalMenuSp{
-  display: none;
-}
-
-/*-------  nav  --------*/
 /*-------  header end  --------*/
 
 /*-------  top  --------*/
