@@ -8,20 +8,6 @@ $(function() {
     $('html, body').animate({ scrollTop: top }, 500);
   });
 
-
-  // nav　
-  $('.navToggle').click(function() {
-    $(this).toggleClass('active');
-
-    if ($(this).hasClass('active')) {
-      $('.globalMenuSp').addClass('active');
-    } else {
-      $('.globalMenuSp').removeClass('active');
-    }
-
-  });
-
-
  // modal windows
 
   // 「.modal-open」をクリック
